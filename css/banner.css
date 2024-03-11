@@ -1,0 +1,128 @@
+.banner {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner--small-appliances {
+    background-image: url("../assets/img/small-appliances-banner.jpg");
+}
+
+.banner--home-appliances {
+    background-image: url("../assets/img/home-appliances-banner.jpg");
+}
+
+.banner--air-comfort {
+    background-image: url("../assets/img/air-comfort-banner.jpg");
+}
+
+.banner--recipe {
+    background-image: url("../assets/img/recipe-banner.jpg");
+}
+
+.banner--support {
+    background-image: url("../assets/img/support-banner.jpg");
+}
+
+.banner--tips {
+    background-image: url("../assets/img/tips-banner.jpg");
+}
+
+.banner--item .banner__container {
+    padding-bottom: 32px;
+}
+
+.banner--item .breadcrumbs {
+    margin-bottom: 0;
+}
+
+.banner::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(360deg, #121212 0%, rgba(0, 0, 0, 0.3) 28.5%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner__container {
+    padding: 80px 19px 58px;
+}
+
+.breadcrumbs {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0 0 16px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 9px;
+}
+
+.breadcrumbs li {
+    position: relative;
+    padding-right: 26px;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.breadcrumbs li::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='8' viewBox='0 0 5 8' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.26539 0.759237L4.11868 3.67592C4.29377 3.85491 4.29377 4.14509 4.11868 4.32408L1.26539 7.24076C1.09029 7.41975 0.806412 7.41975 0.631319 7.24076C0.456227 7.06178 0.456227 6.77159 0.631319 6.59261L3.16758 4L0.631319 1.40739C0.456227 1.22841 0.456227 0.938219 0.631319 0.759237C0.806412 0.580254 1.09029 0.580254 1.26539 0.759237Z' fill='%238A8A8A'/%3E%3C/svg%3E");
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.breadcrumbs li:last-child::after {
+    display: none;
+}
+
+.breadcrumbs a {
+    color: var(--dark-6);
+    text-decoration: none;
+}
+
+.banner__title {
+    position: relative;
+    z-index: 1;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--white);
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+@media (min-width: 1158px) {
+    .banner {
+        padding: 0 19px;
+    }
+
+    .banner__container {
+        padding: 24px 0 42px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 28px;
+    }
+
+    .banner__title {
+        font-size: 64px;
+        line-height: 1;
+        max-width: 560px;
+        min-height: 128px;
+    }
+}

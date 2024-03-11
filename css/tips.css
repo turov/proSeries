@@ -1,0 +1,99 @@
+.tips__container {
+    padding: 0 19px 32px;
+}
+
+.tips__tip {
+    width: 100%;
+    min-height: 180px;
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 32px;
+    margin-bottom: 32px;
+}
+
+.tips__tip--recipes {
+    min-height: 280px;
+    background: linear-gradient(117.44deg, rgba(0, 0, 0, 0.5) 0%, rgba(40, 40, 40, 0.15) 100%), url(../assets/img/tips-recipe.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.tips__tip--articles {
+    background: linear-gradient(117.44deg, rgba(0, 0, 0, 0.5) 0%, rgba(40, 40, 40, 0.15) 100%), url(../assets/img/tips-articles.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.tips__tip--support {
+    background: linear-gradient(117.44deg, rgba(0, 0, 0, 0.5) 0%, rgba(40, 40, 40, 0.15) 100%), url(../assets/img/tips--support.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.tips__tip h3 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.2;
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+}
+
+@media (min-width: 1158px) {
+    .tips {
+        padding: 0 19px;
+    }
+
+    .tips__container {
+        padding: 0 0 64px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px;
+    }
+
+    .tips__title {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .tips__content {
+        display: flex;
+        gap: 32px;
+    }
+
+    .tips__block {
+        width: calc(50% - 16px);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px
+    }
+
+    .tips__tip {
+        margin-bottom: 0;
+    }
+
+    .tips__tip--recipes {
+        min-height: 392px;
+        background: linear-gradient(117.44deg, rgba(0, 0, 0, 0.5) 0%, rgba(40, 40, 40, 0.15) 100%), url(../assets/img/tips-recipe-desk.jpg) no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: top;
+    }
+
+    .tips__tip--articles {
+        background: linear-gradient(117.44deg, rgba(0, 0, 0, 0.5) 0%, rgba(40, 40, 40, 0.15) 100%), url(../assets/img/tips-articles-desk.jpg) no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: top;
+    }
+
+    .tips__tip--support {
+        background: linear-gradient(117.44deg, rgba(0, 0, 0, 0.5) 0%, rgba(40, 40, 40, 0.15) 100%), url(../assets/img/tips--support-desk.jpg) no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: top;
+    }
+}

@@ -1,0 +1,22 @@
+.article {
+    padding: 48px 19px 64px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.article__container {
+    background-color: var(--dark-2);
+    padding: 16px;
+}
+
+@media (min-width: 1158px) {
+    .article {
+        padding: 64px 19px 96px;
+    }
+
+    .article__container {
+        padding: 64px;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,23 @@
+.button {
+    background-color: var(--b-l-c);
+    color: var(--white);
+    text-decoration: none;
+    width: fit-content;
+    font-size: 16px;
+    line-height: 1;
+    padding: 12px 16px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+}
+
+
+.button svg {
+    margin-left: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+@media (min-width: 1158px) {
+
+}

@@ -1,0 +1,56 @@
+.promo__container {
+    padding: 0 19px 48px;
+}
+
+.promo__content {
+    background: linear-gradient(107.56deg, #414141 0%, #282828 100%);
+    padding: 24px 16px;
+}
+
+.promo__title {
+    margin-bottom: 46px;
+}
+
+.promo__text {
+    font-size: 18px;
+    margin-bottom: 46px;
+}
+
+@media (min-width: 1158px) {
+    .promo {
+        padding: 76px 19px 0;
+    }
+
+    .promo__container::before {
+        content: '';
+        display: block;
+        background-image: url("../assets/img/chef.png");
+        width: 464px;
+        height: 699px;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .promo__container {
+        padding: 0;
+        position: relative;
+        max-width: 1140px;
+        margin: 0 auto 64px;
+    }
+
+    .promo__content {
+        padding: 85px 580px 85px 48px;
+    }
+
+    .promo__title {
+        text-align: left;
+        margin-bottom: 42px;
+    }
+
+    .promo__text {
+        margin-bottom: 42px;
+    }
+}

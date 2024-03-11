@@ -1,0 +1,58 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup .videoFull {
+    width: 320px;
+    height: auto;
+    display: none;
+}
+
+.popup.active {
+    display: flex;
+}
+
+.popup.active .videoFull {
+    display: block;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    transition: all 0.6s ease;
+}
+
+.close:hover {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 767px) {
+    .popup .videoFull {
+        width: 404px;
+    }
+
+    .close {
+        top: 20px;
+        right: 20px;
+    }
+}
