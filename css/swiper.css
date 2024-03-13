@@ -11,6 +11,10 @@
     margin: 32px auto 48px;
 }
 
+.swiper-wrapper {
+    z-index: 2;
+}
+
 .swiper-pagination {
     position: static;
 }
@@ -66,7 +70,7 @@
         top: 50%;
         left: 0;
         transform: translateY(50%);
-        z-index: 4;
+        z-index: 1;
         width: 100%;
         max-width: unset;
         justify-content: space-between;
